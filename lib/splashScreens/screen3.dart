@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:sample_project/auth/signIn.dart';
 import 'package:sample_project/screen_one/home.dart';
 import 'package:sample_project/themes/color.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+// void main() {
+//   runApp(const MyApp());
+// }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+// class MyApp extends StatelessWidget {
+//   const MyApp({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Screen3(),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Screen3(),
+//     );
+//   }
+// }
 
 // ignore: must_be_immutable
 class Screen3 extends StatelessWidget {
@@ -25,7 +26,8 @@ class Screen3 extends StatelessWidget {
   Color color1 = HexColor("#FFE5FA");
   Color color2 = HexColor("#3F1D38");
 
-  Screen3({Key? key}) : super(key: key);
+  Screen3({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +69,7 @@ class Screen3 extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Home()),
+                  MaterialPageRoute(builder: (context) => const SignIn()),
                 );
               },
               style: ElevatedButton.styleFrom(

@@ -3,21 +3,21 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:sample_project/themes/color.dart';
 import 'screen3.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+// void main() {
+//   runApp(const MyApp());
+// }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+// class MyApp extends StatelessWidget {
+//   const MyApp({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Screen2(),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Screen2(),
+//     );
+//   }
+// }
 
 // ignore: must_be_immutable
 class Screen2 extends StatelessWidget {

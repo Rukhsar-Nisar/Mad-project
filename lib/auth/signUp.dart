@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 36,
-                  color: Colors.blue, // Change text color to blue
+                  color: Colors.orange, // Change text color to blue
                 ),
               ),
               const SizedBox(height: 24), // Add space
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Name',
                   prefixIcon: Icon(
                     Icons.person,
-                    color: Colors.blue, // Change icon color to blue
+                    color: Colors.orange, // Change icon color to blue
                   ),
                 ),
                 onChanged: (text) {
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Password',
                   prefixIcon: Icon(
                     Icons.lock,
-                    color: Colors.blue, // Change icon color to blue
+                    color: Colors.orange, // Change icon color to blue
                   ),
                 ),
                 obscureText: true, // Hide password text
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Date Of Birth',
                   prefixIcon: Icon(
                     Icons.calendar_month,
-                    color: Colors.blue, // Change icon color to blue
+                    color: Colors.orange, // Change icon color to blue
                   ),
                 ),
                 onChanged: (text) {
@@ -122,11 +122,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                      Navigator.push(
                 context,
-                 MaterialPageRoute(builder: (context) => const SignIn(title: '',)),
+                 MaterialPageRoute(builder: (context) => const SignIn()),
             );       
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, // Button background color
+                  backgroundColor: Colors.orange, // Button background color
                   foregroundColor: Colors.white,
                 ),
                 child: Text(

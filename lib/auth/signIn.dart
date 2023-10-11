@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:sample_project/screen_one/home.dart';
 
 class SignIn extends StatefulWidget {
-  final String title;
 
-  const SignIn({Key? key, required this.title}) : super(key: key);
+  const SignIn({Key? key}) : super(key: key);
 
   @override
   _SignInState createState() => _SignInState();
@@ -37,7 +36,7 @@ class _SignInState extends State<SignIn> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: textSize + 15,
-                  color: Colors.blue,
+                  color: Colors.orange,
                 ),
               ),
               const SizedBox(height: 24),
@@ -47,7 +46,7 @@ class _SignInState extends State<SignIn> {
                   labelText: 'Email',
                   prefixIcon: Icon(
                     Icons.email,
-                    color: Colors.blue,
+                    color: Colors.orange,
                   ),
                 ),
                 onChanged: (text) {
@@ -63,7 +62,7 @@ class _SignInState extends State<SignIn> {
                   labelText: 'Password',
                   prefixIcon: Icon(
                     Icons.lock,
-                    color: Colors.blue,
+                    color: Colors.orange,
                   ),
                 ),
                 obscureText: true,
@@ -94,7 +93,7 @@ class _SignInState extends State<SignIn> {
                  MaterialPageRoute(builder: (context) => const Home()),
             );                       },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Colors.orange,
                   foregroundColor: Colors.white,
                   padding: buttonPadding,
                 ),
@@ -115,9 +114,11 @@ class _SignInState extends State<SignIn> {
                     // style: TextStyle(fontSize: textSize + 5),
                   ),
                   SizedBox(width: 5), // Add some space between the two texts
-                  Text(
-                    "Sign up",
-                    style: TextStyle(color: Colors.blue),
+                  InkWell(
+                    child: Text(
+                      "Sign up",
+                      style: TextStyle(color: Colors.orange),
+                    ),
                   ),
                   SizedBox(height: 12),
                 ],
